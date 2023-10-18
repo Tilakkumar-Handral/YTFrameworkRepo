@@ -26,10 +26,12 @@ public class TC6 extends BaseClass{
 		driver.findElement(By.xpath(pr.getProperty("clickOnVideoBtn"))).click();
 		Thread.sleep(9000);
 		
-		//code to click on comment box and add comment
+		//scroll to comment box
 		Actions action = new Actions(driver);
 		action.scrollByAmount(0, 300).build().perform();
 		Thread.sleep(3000);
+		
+		//code to click on comment box and add comment
 		driver.findElement(By.xpath(pr.getProperty("commentPlcaHolderBtn"))).click();
 		WebElement commentBox = driver.findElement(By.xpath(pr.getProperty("commentText")));
 		commentBox.click();
