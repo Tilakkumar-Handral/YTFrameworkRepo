@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="8">
+  <test name="Test">
     <classes>
-      <class name="org.testng.TestScript.TC2"/>
-      <class name="org.testng.TestScript.TC1"/>
-      <class name="org.testng.TestScript.TC4"/>
-      <class name="org.testng.TestScript.TC3"/>
-      <class name="org.testng.TestScript.AppTest"/>
-      <class name="org.testng.Base.BaseClass"/>
-      <class name="org.testng.TestScript.TC6"/>
       <class name="org.testng.TestScript.TC5"/>
-      <class name="org.testng.TestScript.TC8"/>
+      <class name="org.testng.TestScript.TC6"/>
       <class name="org.testng.TestScript.TC7"/>
+      <class name="org.testng.TestScript.TC8"/>
+      <class name="org.testng.TestScript.TC1"/>
+      <class name="org.testng.TestScript.TC2"/>
+      <class name="org.testng.TestScript.TC3"/>
+      <class name="org.testng.TestScript.TC4"/>
+      <class name="org.testng.Base.BaseClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
