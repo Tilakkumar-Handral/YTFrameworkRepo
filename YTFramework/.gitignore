@@ -1,0 +1,7 @@
+*target*
+
+screenshots
+
+test-output/
+
+*.log
