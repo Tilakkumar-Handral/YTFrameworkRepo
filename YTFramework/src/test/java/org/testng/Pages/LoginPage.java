@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.utilities.LogCapture;
 
 public class LoginPage {
 	WebDriver driver;
@@ -27,5 +28,6 @@ public class LoginPage {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(pr.getProperty("passText"))).sendKeys("youtubetest87",Keys.ENTER);
 		Thread.sleep(6000);
+		
 	}
 }
