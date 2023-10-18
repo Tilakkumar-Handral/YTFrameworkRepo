@@ -1,7 +1,6 @@
-*target*
-
+/target/
+/test-output/
 screenshots
 
-test-output/
 
 *.log
