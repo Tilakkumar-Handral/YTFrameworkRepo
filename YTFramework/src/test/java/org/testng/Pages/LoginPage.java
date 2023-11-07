@@ -22,11 +22,11 @@ public class LoginPage {
 		WebElement siginButton = driver.findElement(By.xpath(pr.getProperty("siginButton")));
 		siginButton.click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath(pr.getProperty("emailText"))).sendKeys("testy6004@gmail.com");
+		driver.findElement(By.xpath(pr.getProperty("emailText"))).sendKeys(pr.getProperty("username"));
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(pr.getProperty("emailNxtBtn"))).click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath(pr.getProperty("passText"))).sendKeys("youtubetest87",Keys.ENTER);
+		driver.findElement(By.xpath(pr.getProperty("passText"))).sendKeys(pr.getProperty("password"),Keys.ENTER);
 		Thread.sleep(6000);
 		
 	}

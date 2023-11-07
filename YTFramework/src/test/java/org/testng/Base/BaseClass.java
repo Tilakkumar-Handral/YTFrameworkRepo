@@ -20,6 +20,9 @@ public class BaseClass {
 		FileReader fr = new FileReader(file);
 		pr = new Properties();
 		pr.load(fr);
+		File credFile = new File("../YTFramework/creds.properties");
+		FileReader credFilreReader = new FileReader(credFile);
+		pr.load(credFilreReader);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.youtube.com/");
